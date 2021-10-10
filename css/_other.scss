@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url("https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css");
+
+
+@mixin flexbox($jc:center,$ai:center) {
+    display: flex;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+@mixin grid($gc:1fr 1fr,$gr:1fr 1fr,$gg:10px) {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: $gc;
+    grid-template-rows: $gr;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+input,select,button{
+    border:none;
+    outline: none;
+    background: transparent;
+}
+b{
+    font-weight: 500;
+    color: #00b3a0;
+}
+
+mark{
+    background: transparent;
+    color: #3885f5;
+    font-weight: 500;
+}
+
+.btn{
+    padding: 10px 25px;
+    border-radius: 5px;
+    background: #3885f5;
+    color: #fff;
+    font-weight: 500;
+}
