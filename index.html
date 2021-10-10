@@ -9,7 +9,7 @@
 <body>
 <div id="app">
     <!-- navbar -->
-    <nav>
+    <nav id="nav">
         <span>
             <h2><mark>Trip</mark>Goal <b>.</b></h2>
         </span>
@@ -165,7 +165,7 @@
         </div>
         <div class="sec5-bx">
             <span>
-                <h2 class="far fa-user"></h2>
+                <h2 class="far fa-envelope"></h2>
                 <p> I have traveled and explored several destinations using this platform, no doubt it is highly recommended for traveling because it is comfortable and the service is great.</p>
                 <h4>Adam L. Brian</h4>
                 <h5>Traveller</h5>
@@ -227,5 +227,12 @@
         <p>© 2021. All copyrights reserved by RH Agency</p>
     </footer>
 </div>
+
+    <script>
+        let nav = document.getElementById('nav')
+        window.addEventListener("scroll", function(){
+            nav.classList.toggle("nav", window.scrollY > 0)
+        })
+    </script>
 </body>
 </html>
